@@ -15,9 +15,10 @@
 
 <p align="center">
   <a href="#它是什么">它是什么</a> ·
-  <a href="#核心系统">核心系统</a> ·
-  <a href="#oracle--quantification-engine">Oracle</a> ·
-  <a href="#cyrus-会怎么说话">交互方式</a> ·
+  <a href="#如果它真的可用会是什么体验">使用效果</a> ·
+  <a href="#dashboard-preview">Dashboard</a> ·
+  <a href="#语音交互情景演绎">语音交互</a> ·
+  <a href="docs/SCENARIOS.md">Scenarios</a> ·
   <a href="docs/ROADMAP.md">Roadmap</a>
 </p>
 
@@ -45,643 +46,317 @@ ESTIMATED   模型估计
 所有信息状态也区分：
 
 ```text
-CONFIRMED   已确认
+CONFIRMED   已确认事实
 REPORTED    当事人陈述
 INFERRED    系统推断
 FORECAST    概率预测
 UNKNOWN     未知
-WARNING     风险提示
+WARNING     风险
 ```
 
 ---
 
-## 为什么想做这个东西
+## 如果它真的可用，会是什么体验
 
-现实中的很多重要变化其实很难“看见”。
+这套系统真正想解决的，不是“怎样把人生做成游戏”，而是：
 
-你可能知道自己最近在健身、在学习、在推进项目，但很难快速回答：
+- 我现在最该做什么？
+- 一件事到底是 **重要**、**困难**，还是 **危险**？
+- 我是在变强，还是只是在忙？
+- 某个目标距离完成究竟还有多远？
+- 我手上的资源、能力和关系，够不够支撑现在的计划？
+- 如果我现在做 A 而不是 B，结果会差多少？
 
-- 我到底进步了多少？
-- 现在最值得做的事情是什么？
-- 一个目标距离完成还有多远？
-- 某个计划有多大概率成功？
-- 我现在缺的是时间、钱、能力，还是信息？
-- 哪些人是关键协作者、决策者或阻塞点？
-- 过去一年到底发生过哪些值得记住的“第一次”？
+### 你能感受到的效果
 
-RPG 在这方面做得非常好。
+#### 1. 任务不再只是待办，而是有结构的 Quest
 
-它会把长期、复杂、模糊的变化，压缩成：
+你不会只看到“10 条待办”。
 
-```text
-等级 · 经验值 · 技能 · 装备 · 任务 · 进度 · 风险 · 成就 · 地图 · 状态
-```
+你会看到：
 
-Reality RPG 想借用的就是这种能力。
+- 哪些是 **Q1 Critical**（重要且紧急）
+- 哪些是 **Q2 Strategic**（重要但不紧急）
+- 哪些任务被谁阻塞
+- 哪些事情虽然难，但不一定危险
+- 哪些任务其实不值得现在做
 
----
+#### 2. 进度不再只是主观感觉，而是可视化状态
 
-# 核心系统
+不是“最近好像有在推进”。
 
-## 1. HUD｜现实世界的即时信息层
+而是：
 
-HUD 不追求“信息越多越好”，而是回答五个问题：
+- Main Quest 目前 74%
+- 当前瓶颈是什么
+- 下一步行动是什么
+- 成功概率在上升还是下降
+- 为什么上升 / 为什么下降
 
-1. 我现在是什么状态？
-2. 当前最重要的任务是什么？
-3. 有什么风险或阻塞？
-4. 下一步应该做什么？
-5. 长期成长有没有发生？
+#### 3. 成长不再只是零散记忆，而是长期记录
 
-概念示例：
+你可以看到：
 
-```text
-VICTOR // PRINCIPAL
-
-Active Quests        12
-Critical             2
-Blocked              3
-Waiting              4
-
-Energy               76%
-Task Load            68%
-
-MAIN QUEST
-████████████░░░░ 74%
-
-Danger               III
-Success Probability  72%
-Confidence           Medium
-```
-
-> 上面只是界面概念，不代表当前已经拥有全部这些实时数据。
+- 身体指标变化
+- 技能树的提升路径
+- 资质和证书解锁了什么现实能力
+- 关键 Achievement 和 Hidden Achievement
+- 长期 Timeline 上哪些时刻值得记住
 
 ---
 
-## 2. Quest System｜现实任务变成任务链
+## 一个更直观的例子
 
-现实里的待办不会只是一张平铺的 To-do List。
+假设你现在面对的是一个现实问题：
 
-任务可以被组织成：
+> 本周五前必须交一份关键资料，但还缺一个文件，对方回复又很慢。
 
-- **Main Quest** — 长期主线
-- **Quest Chain** — 连续任务链
-- **Side Quest** — 支线任务
-- **Training Quest** — 学习 / 训练
-- **Timed Quest** — 限时任务
-- **Event Quest** — 事件触发
-- **Hidden Quest** — 系统从证据里发现的重要任务
-- **Boss Quest** — 高难度关键节点
-- **Daily Quest** — 日常行为
-- **Maintenance Quest** — 维持型任务
+普通待办工具只能告诉你：
 
-一个 Quest 可以包含：
+> “别忘了星期五之前交。”
 
-```text
-Progress
-Next Action
-Deadline
-Blockers
-Waiting On
-Dependencies
-Difficulty
-Danger
-Success Probability
-Failure Consequence
-```
+Reality RPG 会更像这样：
 
-### Priority：四象限，不只是 P0 / P1
+- 这是一个 **Q1 // CRITICAL** 任务
+- Difficulty 是 **B+**，Danger 是 **IV**
+- 当前最优选项不是“立刻乱交”，而是“先追缺失文件”
+- 在当前条件下，成功概率是 **74%**
+- 如果今天拿到缺失文件，成功概率会升到 **84%**
+- 如果 24 小时内仍没回复，成功概率会降到 **51%**
 
-| | 紧急 | 不紧急 |
-|---|---|---|
-| **重要** | **Q1 · CRITICAL** | **Q2 · STRATEGIC** |
-| **不重要** | **Q3 · REACTIVE** | **Q4 · OPTIONAL** |
+也就是说，它不只是记录任务，而是开始帮你理解：
 
-四象限负责分类；后台的 Quantification Engine 再根据 Deadline、后果、战略价值、依赖关系、可逆性和机会成本进行细排序。
+> **接下来什么动作最值钱。**
 
 ---
 
-## 3. Difficulty & Danger｜难，不等于危险
+## Dashboard Preview
 
-**Difficulty** 表示事情本身有多难：
+现实 RPG 最直接的使用体验，会先体现在 Dashboard / HUD 上。
 
-```text
-SSS+ → SSS → SS → S → A → B → C → D-
-```
+### 主 Dashboard：把状态、主线、人物网络和风险放到同一张界面里
 
-**Danger** 表示做错以后代价有多大：
+<p align="center">
+  <img src="assets/dashboard-hud.svg" alt="Reality RPG Dashboard HUD" width="100%" />
+</p>
 
-```text
-I     Minimal
-II    Guarded
-III   Elevated
-IV    High
-V     Critical
-```
+这个界面里会同时看到：
+
+- **Victor / Principal** 的当前状态
+- Active Quests 的分布
+- Main Quest 的进度和下一步目标
+- Oracle 概率推演
+- People / Network 的关系图
+- Achievement、资源、地图等核心模块入口
+
+它回答的不是“今天有多少任务”，而是：
+
+> **现在的整体局势是什么。**
+
+### 决策支持会长什么样
+
+当你真的要做决策时，系统会继续往下走到 Quest + Oracle 这一层：
+
+- 当前任务是什么
+- 现在有哪些可行路径
+- 每条路径的成功率 / 成本 / 可逆性如何
+- 系统为什么建议你选 B 而不是 A
+- 哪个变量最值得优先干预
+
+这一部分的完整演示见：
+
+- [Scenarios / 使用情景演示](docs/SCENARIOS.md)
+- [Public Roadmap](docs/ROADMAP.md)
+
+---
+
+## 核心系统
+
+### HUD
+
+现实世界的即时信息层。它回答：
+
+- 我现在是什么状态？
+- 当前最重要的任务是什么？
+- 有没有危险？
+- 下一步应该做什么？
+
+### Quest System
+
+任务会被组织成：
+
+- Main Quest
+- Quest Chain
+- Side Quest
+- Training Quest
+- Timed Quest
+- Hidden Quest
+- Boss Quest
+
+并且显式区分：
+
+- **Priority**：值得不值得现在处理
+- **Difficulty**：事情本身有多难
+- **Danger**：做错之后代价有多大
+
+### Skills / Qualifications / Achievements
+
+它们分别对应：
+
+- **Skill**：你真实的能力结构
+- **Qualification**：外部认证与资格解锁
+- **Achievement**：值得被记住的里程碑
+
+### People / Network / Map / Codex
+
+现实中的人不会被叫做 NPC。
+
+系统会使用：
+
+- People / Contact / Stakeholder / Counterparty / Adviser / Team Member
+
+并通过关系层级、互动记录和网络结构分析，帮助你看清：
+
+- 谁是关键人物
+- 哪些任务依赖同一个人
+- 哪里出现了 Single Point of Failure
+
+---
+
+## Oracle + Quantification Engine
+
+如果说 Quest System 解决的是“有什么事要做”，那么 **Oracle** 解决的是：
+
+> **我现在这样做，成功概率有多大？**
+
+而 **Quantification Engine** 解决的是：
+
+> **哪些模糊问题，可以用更好的方法被量化和比较？**
+
+它可能会用到：
+
+- Bayesian inference / Bayesian update
+- Expected Utility
+- Monte Carlo
+- PERT / Critical Path
+- Expected Loss
+- Elo / IRT
+- Brier Score
+- Dunbar Number
+- Graph Analysis
+- Opportunity Cost / Regret Analysis
+
+这并不意味着系统会“装作什么都算得很准”。
+
+恰恰相反，它会尽量明确：
+
+- 这是不是事实
+- 这是不是推断
+- 这是不是条件预测
+- 哪些假设一变，结论就会变
+
+---
+
+## 语音交互情景演绎
+
+除了 Dashboard，另一个很重要的体验入口是 **Cyrus 的语音与实时交互**。
+
+### 语音交互不是纯聊天，而是“助手 + 系统”的双层表达
+
+- **System Language**：客观状态与 telemetry
+- **Cyrus Operational Voice**：Cyrus 直接对你说话
+- **Hybrid Event Announcement**：系统检测到事件，同时 Cyrus 汇报处理结果
 
 例如：
-
-```text
-取消一个普通订阅
-Difficulty: D
-Danger: I
-```
-
-而：
-
-```text
-签署一份重要商业合同
-Difficulty: A
-Danger: V
-```
-
-这是两个完全不同的维度。
-
----
-
-## 4. Principal Profile｜现实角色状态
-
-角色面板尽量不凭空制造“力量 99、智力 87”这种数字，而是从真实记录里产生。
-
-例如身体层可以接入：
-
-```text
-Weight
-Body Fat
-Muscle Mass
-Strength
-Training PR
-Pull-ups
-Recovery
-```
-
-进一步可以构造计算型属性，例如：
-
-```text
-STR      Physical Strength
-END      Endurance
-EXEC     Execution Ability
-OPS      Operational Ability
-FIN      Financial Resources
-```
-
-任何抽象属性都应该能够回答：
-
-> **这个数字是怎么来的？**
-
----
-
-## 5. Skills｜现实技能树
-
-技能可以被拆成多维度：
-
-```text
-Piano
-├─ Performance
-├─ Sight Reading
-├─ Theory
-└─ Technique
-
-Vibe Coding
-├─ Prompting
-├─ Debugging
-├─ API Integration
-├─ Deployment
-└─ Architecture
-```
-
-技能升级不只靠“花了多少小时”，还看实际证据：完成过什么、解决过什么、是否能独立使用、是否成功处理了超出当前能力等级的任务。
-
-技能树也可以直接成为学习路线：
-
-```text
-Bayesian Reasoning       ◇ Practising
-Decision Trees           ◇ Introduced
-Monte Carlo              🔒 Locked
-Graph Analysis           🔒 Locked
-```
-
----
-
-## 6. Qualification｜资质与证书
-
-Qualification 和 Skill 分开。
-
-证书可以记录：
-
-```text
-Issuer
-Level
-Result
-Grade / Classification
-Score
-Award Date
-Expiry
-Verification
-Unlocks
-```
-
-例如：
-
-```text
-ABRSM Piano Grade 2
-Result: Distinction
-
-ABRSM Music Theory Grade 5
-Result: Merit
-
-English B1
-Result: Pass with Distinction
-```
-
-资格本身可以成为现实世界里的“Key Item”，解锁某些职业、申请或合规条件。
-
----
-
-## 7. Assets & Resources｜装备和资源
-
-现实里的：
-
-- 电脑
-- 手机
-- 软件
-- AI 工具
-- 车辆
-- 商业设备
-- 订阅
-- 文件
-- 网络访问
-
-都可以成为 Equipment / Asset。
-
-除此之外，还有更重要的资源：
-
-```text
-Money
-Time
-Energy
-Attention
-Compute
-Information
-Network
-Access
-Reputation
-```
-
-因此系统可能显示：
-
-```text
-检测到资源缺口。
-
-Required Capital     £3,200
-Available Budget     £1,700
-
-余额不足。
-Funding Gap          £1,500
-```
-
-这里没有虚拟金币，只有现实资源。
-
----
-
-## 8. Achievement｜现实成就系统
-
-成就可以提前设定，例如：
-
-```text
-卧推 60 kg
-标准引体向上 × 8
-硬拉 120 kg
-深蹲 90 kg
-```
-
-也可以由系统动态发现：
-
-```text
-【检测到隐藏成就条件满足】
-
-FIRST-TIME MILESTONE
-第一次独立完成某项重要任务
-
-Achievement Unlocked
-```
-
-隐藏成就尤其适合记录：
-
-- 第一次
-- 个人纪录
-- 长期里程碑
-- 特殊事件
-- 很久以后回头看仍然值得记住的时刻
-
-它的目的不是硬塞奖励，而是：
-
-> **不要让重要的成长发生了，却没人记得。**
-
----
-
-## 9. People Network｜人物与关系网络
-
-现实中的人不会被称作 NPC。
-
-系统使用更现实的角色词：
-
-```text
-People
-Contact
-Friend
-Family
-Adviser
-Team Member
-Counterparty
-Stakeholder
-Decision Maker
-```
-
-关系层级可以参考 Dunbar Number，并进一步记录：
-
-```text
-Relationship
-Role
-Trust
-Reliability
-Interaction Recency
-Shared Objectives
-Open Threads
-```
-
-建立人物网络后，系统还能发现一些平时不容易看见的结构：
-
-```text
-Dependency detected.
-3 important quests depend on the same person.
-Single Point of Failure.
-```
-
----
-
-## 10. World / Mission Map｜不只是一张地图
-
-地图系统分为三类：
-
-### Physical Map
-
-现实地点，例如 Base、Business、Gym、Supplier、Meeting、Resource、Quest Objective。
-
-### Mission Map
-
-展示任务依赖：
-
-```text
-Main Quest
-   │
-   ├── Quest A
-   │     └── Quest C
-   │
-   └── Quest B
-          │
-        BLOCKED
-          │
-     Waiting External
-```
-
-### Strategic Map
-
-展示 Objective、Resources、Threats、People、Constraints、Options、Deadlines。
-
-换句话说，地图不是只回答“我在哪里”，还回答：
-
-> **我现在身处怎样的局面。**
-
----
-
-# Oracle & Quantification Engine
-
-## Oracle｜如果现实也有“成功概率”
-
-Oracle 对现实目标做的是 **Conditional Forecast（条件预测）**。
-
-例如：
-
-```text
-Target
-在 9 月 30 日前完成 X
-
-Success Probability
-72%
-
-Confidence
-MEDIUM
-```
-
-重点不是单独那个 `72%`，而是：
-
-```text
-如果关键材料本周完成   → 79%
-如果对方 7 日内回复     → 84%
-如果延迟 14 天          → 51%
-如果出现新要求          → 43%
-```
-
-真正有价值的问题是：
-
-> **哪个变量最值得干预？**
-
-新证据出现后，系统可以重新计算：
-
-```text
-【检测到新证据】
-
-已重新计算条件成功概率。
-61% → 74%
-+13 percentage points
-```
-
-如果没有可靠统计基准，模型也可以使用主观先验，但必须明确告诉用户：这是估计，不是客观统计事实。
-
----
-
-## Quantification Engine｜不同问题用不同方法
-
-不是所有事情都强行套一个“综合评分”。
-
-不同问题应该使用不同工具：
-
-| 问题 | 方法 |
-|---|---|
-| 成功概率 | Bayesian inference |
-| 新证据更新 | Bayesian update |
-| 多方案选择 | Expected Utility / MCDA |
-| 不确定结果 | Monte Carlo |
-| 项目时间 | PERT |
-| 项目瓶颈 | Critical Path |
-| 风险损失 | Expected Loss / FMEA |
-| 技能估计 | Elo / IRT |
-| 预测准不准 | Brier Score |
-| 人际圈层 | Dunbar |
-| 人物关系网络 | Graph Analysis |
-| 等待事件发生 | Survival Analysis |
-| 是否值得现在做 | Opportunity Cost |
-| 决策后悔风险 | Regret Analysis |
-| 保留选择权价值 | Option Value |
-
-这部分既是系统能力，也可以反过来成为自己的学习技能树。
-
----
-
-# Codex / Timeline / Intel
-
-## Codex
-
-个人世界百科：
-
-```text
-People
-Organisations
-Places
-Assets
-Events
-Knowledge
-System
-```
-
-## Timeline
-
-长期记录：
-
-```text
-Major Event
-Achievement
-Qualification
-Personal Record
-Important Decision
-Quest Completion
-```
-
-多年以后，它会成为一条真正可以查询的人生时间线。
-
-## Intel
-
-不知道就是不知道。
-
-所有信息都会保留自己的证据状态，而不是被统一包装成“系统知道”。
-
----
-
-# Cyrus 会怎么说话
-
-Reality RPG 并不要求 AI 全程像游戏弹窗。
-
-Cyrus 有两个互补的表达层。
-
-### System Language｜系统状态
 
 ```text
 系统检测中……
 正在访问互联网。
 检测完成。
-检测到新任务。
-检测到异常。
-危险度：IV。
-```
 
-### Operational Voice｜Cyrus 本人的执行口吻
-
-```text
-明白，先生。
 好的，先生。
-是，先生。
-完成了，先生。
-查到了，先生。
+查到了，先生。今天有三个相关事项。
 ```
 
-英文可以保留更明显的 AI Butler 风格：
-
-```text
-Yes, sir.
-Will do, sir.
-Done, sir.
-Accessing Internet.
-Awaiting your instruction, sir.
-```
-
-后台任务默认静默执行；只有真正值得汇报的状态变化才打断用户。
-
----
-
-# 系统结构
-
-```mermaid
-flowchart TD
-    A[Real World] --> B[Source of Truth / Evidence]
-    B --> C[Cyrus Reasoning & Task Engine]
-    C --> D[Quantification Engine]
-    C --> E[Quest / Skills / People / Assets]
-    D --> F[Oracle Forecast]
-    E --> G[RPG Projection Layer]
-    F --> G
-    G --> H[HUD / Dashboard]
-    G --> I[Voice / Realtime]
-    G --> J[Timeline / Codex / Intel]
-```
-
-表面上它像“把人生做成 RPG”。
-
-底层更接近：
-
-```text
-Personal State Model
-+
-Decision Engine
-+
-Task System
-+
-AI Chief-of-Staff
-+
-RPG Interface
-```
-
----
-
-# 当前状态
-
-> **Status: Concept finalized / Active development**
-
-目前已完成或已经明确的主要部分：
-
-- [x] RPG / HUD 产品结构
-- [x] Quest / Skill / Achievement 等核心模型设计
-- [x] Priority / Difficulty / Danger 体系
-- [x] Oracle / Quantification Engine 方法框架
-- [x] Cyrus System Language / Operational Voice 交互规则
-- [ ] Persona Runtime 投射
-- [ ] 自动任务管理正式接入
-- [ ] Internet Search / Background Execution 深度整合
-- [ ] Quantification Engine v0
-- [ ] RPG Dashboard / HUD 实现
-- [ ] People Network / Mission Map
-- [ ] 长期 Forecast calibration
-
-完整规划见：**[Roadmap →](docs/ROADMAP.md)**
-
----
-
-## 项目范围
-
-这个公开仓库用于：
-
-- 项目介绍
-- 产品理念
-- 系统设计展示
-- Roadmap / 规划更新
-- 未来公开演示
-
-它**不是** Cyrus 私人系统的数据仓库，也不会公开个人任务、联系人、商业资料、私人记忆或内部 Source of Truth。
-
-当前公开内容主要是产品方向和设计概念，不代表所有模块都已经实现或上线。
-
----
+### 场景预览
 
 <p align="center">
-  <strong>现实世界仍然是真正的游戏场。</strong>
+  <img src="assets/voice-demo.svg" alt="Voice interaction scenario" width="100%" />
 </p>
+
+这个场景展示的是：
+
+1. 用户发出指令
+2. Cyrus 用最简短的 Operational Voice 承接
+3. 真正开始 Internet Search 时，系统可选择短暂播报 `Accessing Internet.`
+4. 默认静默执行，不用冗长解释后台编排
+5. 有结果后再汇报，并自然衔接下一步建议
+
+这也是 Cyrus 的一个核心设计原则：
+
+> **System underneath, personal assistant on the surface.**
+
+看起来像一个简洁、稳定、可信的 AI 助手；底下其实是一整套状态模型、任务系统和量化引擎。
+
+---
+
+## 更多使用场景
+
+如果你更想看“它会在现实里怎么帮助人”，可以直接看：
+
+- [Scenarios / 使用情景演示](docs/SCENARIOS.md)
+- [Public Roadmap](docs/ROADMAP.md)
+
+Scenarios 会更偏向：
+
+- 日常任务推进
+- 截止日前的决策支持
+- 健身与技能成长追踪
+- 人物网络与资源判断
+- 语音交互与后台执行体验
+
+---
+
+## 当前状态
+
+这个项目当前仍然是 **公开概念展示 + 规划说明**。
+
+已经完成的主要是：
+
+- 产品结构与信息架构
+- Reality RPG 的概念定义
+- HUD / Quest / Skills / Achievements / People / Map / Codex / Intel 等模块设计
+- Priority / Difficulty / Danger 体系
+- Oracle / Conditional Forecast / Quantification Engine 方法框架
+- Cyrus 的 System Language 与 Operational Voice 设计
+- 公开 README、Roadmap 与 Scenario 展示
+
+尚未全部实现的包括：
+
+- 完整的可运行 Dashboard
+- 实时数据流接入
+- 真正可用的 Quantification Engine
+- 语音 frontstage 与后台任务执行联动
+- 长期 Forecast Calibration
+
+所以它现在更准确的定位是：
+
+> **一个正在逐步从概念走向系统实现的 Personal RPG / AI Life OS 项目。**
+
+---
+
+## Public Scope
+
+这个仓库只用于公开介绍项目概念、体验方向与规划展示。
+
+它 **不会** 公开：
+
+- 个人隐私数据
+- 私人任务记录
+- 内部权限规则
+- 私人 Source of Truth
+- 私人 Cyrus 运行配置
+
+如果你对这个方向感兴趣，最值得看的不是“它像不像游戏”，而是：
+
+> **它能不能让现实生活里那些原本模糊、分散、难以追踪的状态，第一次真正变得可观察、可解释、可决策。**
