@@ -1,1 +1,88 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#171a20"/><stop offset="100%" stop-color="#0b0b0d"/></linearGradient><linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#d4af37"/><stop offset="100%" stop-color="#f0d77f"/></linearGradient></defs><rect width="1600" height="900" fill="url(#bg)"/><text x="50" y="70" fill="#f5f1e6" font-family="Arial" font-size="34" font-weight="700">CYRUS REALITY RPG</text><text x="50" y="105" fill="#9ea3ad" font-family="Arial" font-size="18">Dashboard Preview · HUD / Quest / Oracle / People</text><rect x="50" y="140" width="280" height="250" rx="22" fill="#111317" stroke="#2c3139"/><text x="75" y="180" fill="#9ea3ad" font-family="Arial" font-size="15">PROFILE</text><text x="75" y="220" fill="#f5f1e6" font-family="Arial" font-size="28" font-weight="700">Victor</text><text x="75" y="252" fill="#d4af37" font-family="Arial" font-size="20">Lv.27 · XP 72%</text><text x="75" y="300" fill="#9ea3ad" font-family="Arial" font-size="15">Energy</text><rect x="75" y="314" width="210" height="12" rx="6" fill="#242936"/><rect x="75" y="314" width="160" height="12" rx="6" fill="url(#gold)"/><text x="75" y="360" fill="#f5f1e6" font-family="Arial" font-size="18">Weight 71.2kg</text><text x="75" y="390" fill="#f5f1e6" font-family="Arial" font-size="18">Body Fat 15.8%</text><rect x="360" y="140" width="720" height="300" rx="22" fill="#111317" stroke="#2c3139"/><text x="390" y="180" fill="#9ea3ad" font-family="Arial" font-size="15">MAIN QUEST</text><text x="390" y="220" fill="#f5f1e6" font-family="Arial" font-size="30" font-weight="700">Build Cyrus into a Personal Operating System</text><text x="390" y="255" fill="#9ea3ad" font-family="Arial" font-size="18">Persona Runtime + Search Delegation + Quest Core</text><rect x="390" y="285" width="630" height="16" rx="8" fill="#242936"/><rect x="390" y="285" width="460" height="16" rx="8" fill="url(#gold)"/><text x="1020" y="300" text-anchor="end" fill="#f5f1e6" font-family="Arial" font-size="15">74%</text><rect x="390" y="330" width="150" height="66" rx="16" fill="#151921" stroke="#3a404b"/><text x="410" y="355" fill="#9ea3ad" font-family="Arial" font-size="13">PRIORITY</text><text x="410" y="382" fill="#d4af37" font-family="Arial" font-size="24" font-weight="700">Q1</text><rect x="560" y="330" width="120" height="66" rx="16" fill="#151921" stroke="#3a404b"/><text x="580" y="355" fill="#9ea3ad" font-family="Arial" font-size="13">DIFFICULTY</text><text x="580" y="382" fill="#f5f1e6" font-family="Arial" font-size="24" font-weight="700">A-</text><rect x="700" y="330" width="120" height="66" rx="16" fill="#151921" stroke="#3a404b"/><text x="720" y="355" fill="#9ea3ad" font-family="Arial" font-size="13">DANGER</text><text x="720" y="382" fill="#e57373" font-family="Arial" font-size="24" font-weight="700">IV</text><text x="390" y="425" fill="#f5f1e6" font-family="Arial" font-size="18">• Reconcile phrase bank with Speech Act Taxonomy</text><rect x="1110" y="140" width="440" height="300" rx="22" fill="#111317" stroke="#2c3139"/><text x="1140" y="180" fill="#9ea3ad" font-family="Arial" font-size="15">ORACLE</text><text x="1140" y="220" fill="#f5f1e6" font-family="Arial" font-size="28" font-weight="700">Conditional Forecast</text><text x="1140" y="255" fill="#9ea3ad" font-family="Arial" font-size="17">Target: launch public repo page</text><text x="1140" y="310" fill="#9ea3ad" font-family="Arial" font-size="15">Success Probability</text><text x="1490" y="318" text-anchor="end" fill="#d4af37" font-family="Arial" font-size="54" font-weight="700">72%</text><rect x="1140" y="336" width="350" height="14" rx="7" fill="#242936"/><rect x="1140" y="336" width="252" height="14" rx="7" fill="url(#gold)"/><text x="1140" y="386" fill="#f5f1e6" font-family="Arial" font-size="16">Measured / Calculated / Estimated</text><rect x="50" y="470" width="1500" height="360" rx="22" fill="#111317" stroke="#2c3139"/><text x="80" y="510" fill="#9ea3ad" font-family="Arial" font-size="15">PEOPLE / NETWORK</text><circle cx="500" cy="650" r="54" fill="#202633" stroke="#556075" stroke-width="2"/><text x="500" y="646" text-anchor="middle" fill="#d4af37" font-family="Arial" font-size="20" font-weight="700">Victor</text><text x="500" y="670" text-anchor="middle" fill="#9ea3ad" font-family="Arial" font-size="14">Principal</text><circle cx="360" cy="610" r="34" fill="#141821" stroke="#4e5665"/><text x="360" y="616" text-anchor="middle" fill="#f5f1e6" font-family="Arial" font-size="14">Friend</text><circle cx="640" cy="608" r="36" fill="#141821" stroke="#4e5665"/><text x="640" y="614" text-anchor="middle" fill="#f5f1e6" font-family="Arial" font-size="14">Adviser</text><circle cx="350" cy="730" r="36" fill="#141821" stroke="#4e5665"/><text x="350" y="736" text-anchor="middle" fill="#f5f1e6" font-family="Arial" font-size="13">Supplier</text><circle cx="650" cy="735" r="42" fill="#141821" stroke="#4e5665"/><text x="650" y="731" text-anchor="middle" fill="#f5f1e6" font-family="Arial" font-size="12">Counterparty</text><line x1="452" y1="638" x2="394" y2="618" stroke="#3c4455" stroke-width="2"/><line x1="548" y1="638" x2="604" y2="616" stroke="#3c4455" stroke-width="2"/><line x1="452" y1="684" x2="388" y2="714" stroke="#3c4455" stroke-width="2"/><line x1="548" y1="684" x2="610" y2="714" stroke="#3c4455" stroke-width="2"/><rect x="840" y="560" width="650" height="220" rx="18" fill="#141821" stroke="#3a404b"/><text x="870" y="600" fill="#9ea3ad" font-family="Arial" font-size="14">INSIGHTS</text><text x="870" y="640" fill="#f5f1e6" font-family="Arial" font-size="18">• 3 quests depend on one counterparty</text><text x="870" y="680" fill="#f5f1e6" font-family="Arial" font-size="18">• Trust trend: stable</text><text x="870" y="720" fill="#f5f1e6" font-family="Arial" font-size="18">• Single Point of Failure detected</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#03101e"/><stop offset="55%" stop-color="#0b2842"/><stop offset="100%" stop-color="#07131f"/></linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#06253d" stop-opacity=".92"/><stop offset="100%" stop-color="#03111e" stop-opacity=".88"/></linearGradient>
+  <radialGradient id="orb"><stop offset="0%" stop-color="#eaffff"/><stop offset="18%" stop-color="#37d7ff"/><stop offset="55%" stop-color="#0578ff"/><stop offset="100%" stop-color="#001b4e"/></radialGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <style>.t{font-family:Arial,'Microsoft YaHei',sans-serif}.mut{fill:#7fc7ef}.txt{fill:#e7f7ff}.cyan{fill:#1ac9ff}.green{fill:#3ef1b8}.orange{fill:#ffb63e}.red{fill:#ff6262}.line{stroke:#14aef4;stroke-opacity:.55}.p{fill:url(#panel);stroke:#1599df;stroke-opacity:.65}</style>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<path d="M0 520 L150 405 260 455 390 305 505 435 625 355 760 490 910 315 1050 450 1160 345 1290 500 1415 370 1600 455 1600 900 0 900Z" fill="#08111a" opacity=".9"/>
+<path d="M0 560 L165 455 280 505 405 365 520 495 650 420 800 545 935 380 1070 520 1180 410 1320 550 1440 430 1600 515" fill="none" stroke="#365168" stroke-opacity=".45" stroke-width="2"/>
+
+<g class="t">
+<circle cx="42" cy="34" r="20" fill="none" stroke="#13b9ff"/><circle cx="42" cy="34" r="8" fill="#21d1ff" filter="url(#glow)"/>
+<text x="76" y="41" class="txt" font-size="18" letter-spacing="2">CYRUS</text><text x="76" y="58" class="mut" font-size="9" letter-spacing="2">REALITY RPG SYSTEM</text>
+<text x="515" y="78" class="txt" font-size="54" font-weight="700" letter-spacing="14" filter="url(#glow)">C.Y.R.U.S.</text>
+<text x="575" y="112" class="mut" font-size="14" letter-spacing="2">REALITY RPG  •  ONLINE  •  LOCAL WAKE READY  •  LISTENING</text>
+<text x="1295" y="36" class="mut" font-size="14">☁ 17°C 多云　│　🎙 隐私保护 · 本地麦克风 ●</text>
+
+<!-- left panels -->
+<rect x="28" y="72" width="320" height="170" rx="18" class="p"/>
+<text x="48" y="105" class="txt" font-size="20" font-weight="700">环境时间线</text><text x="300" y="105" class="cyan" font-size="16">⌃</text>
+<g transform="translate(50 124)"><circle cx="28" cy="24" r="22" fill="#cfefff" opacity=".85"/><text x="5" y="66" class="txt" font-size="14">现在 12°C</text></g>
+<g transform="translate(145 124)"><circle cx="28" cy="24" r="22" fill="#cfefff" opacity=".85"/><path d="M18 50l-4 12M30 50l-4 12M42 50l-4 12" stroke="#24c8ff" stroke-width="2"/><text x="2" y="80" class="txt" font-size="14">15:00 小雨</text></g>
+<g transform="translate(248 124)"><circle cx="22" cy="24" r="18" fill="#cfefff" opacity=".85"/><text x="0" y="66" class="txt" font-size="14">18:00 9°C</text></g>
+<text x="50" y="224" class="mut" font-size="14">☂ 出门带伞　·　空气良 42</text>
+
+<rect x="28" y="260" width="320" height="170" rx="18" class="p"/>
+<text x="48" y="295" class="txt" font-size="20" font-weight="700">后台任务</text>
+<text x="48" y="330" class="txt" font-size="15">♜ 主线任务：完善 Reality RPG 展示页面</text><text x="310" y="330" class="txt" font-size="15">72%</text>
+<rect x="48" y="343" width="255" height="7" rx="3" fill="#17384d"/><rect x="48" y="343" width="184" height="7" rx="3" fill="#18bdf7"/>
+<text x="48" y="382" class="mut" font-size="14">支线：收集用户反馈（3 / 5）</text><text x="285" y="382" class="orange" font-size="14">进行中</text>
+<text x="48" y="412" class="mut" font-size="14">日常：身体训练计划 · 第 4 天</text><text x="285" y="412" class="orange" font-size="14">进行中</text>
+
+<rect x="28" y="448" width="320" height="250" rx="18" class="p"/>
+<text x="48" y="484" class="txt" font-size="20" font-weight="700">先生的状态资料</text><text x="285" y="484" class="green" font-size="14">已更新</text>
+<text x="48" y="520" class="mut" font-size="14">体重</text><text x="180" y="520" class="txt" font-size="14">72.3 kg</text><text x="280" y="520" class="mut" font-size="14">↓ 0.4</text>
+<text x="48" y="548" class="mut" font-size="14">体脂</text><text x="180" y="548" class="txt" font-size="14">16.8 %</text><text x="280" y="548" class="mut" font-size="14">↓ 0.3</text>
+<text x="48" y="576" class="mut" font-size="14">肌肉量</text><text x="180" y="576" class="txt" font-size="14">58.6 kg</text><text x="280" y="576" class="green" font-size="14">↑ 0.2</text>
+<text x="48" y="610" class="txt" font-size="14">Energy 能量　78 / 100</text><rect x="205" y="603" width="105" height="7" rx="3" fill="#17384d"/><rect x="205" y="603" width="82" height="7" rx="3" fill="#16bdf4"/>
+<text x="48" y="640" class="txt" font-size="14">Focus 专注　84 / 100</text><rect x="205" y="633" width="105" height="7" rx="3" fill="#17384d"/><rect x="205" y="633" width="88" height="7" rx="3" fill="#16bdf4"/>
+<text x="48" y="672" class="txt" font-size="14">Lv. 24　　XP 18,760 / 24,000</text>
+<circle cx="49" cy="687" r="5" class="green"/><text x="64" y="692" class="mut" font-size="13">先生的状态资料已更新</text>
+
+<!-- central orb -->
+<circle cx="790" cy="390" r="196" fill="#001b30" fill-opacity=".45" stroke="#14b9ff" stroke-width="2"/>
+<circle cx="790" cy="390" r="166" fill="none" stroke="#0fb7ff" stroke-opacity=".7"/>
+<circle cx="790" cy="390" r="136" fill="none" stroke="#0a78cc" stroke-dasharray="5 7"/>
+<circle cx="790" cy="390" r="90" fill="url(#orb)" opacity=".95" filter="url(#glow)"/>
+<g fill="none" stroke="#6ee8ff" stroke-opacity=".75"><ellipse cx="790" cy="390" rx="76" ry="28" transform="rotate(25 790 390)"/><ellipse cx="790" cy="390" rx="76" ry="28" transform="rotate(-25 790 390)"/><ellipse cx="790" cy="390" rx="28" ry="76" transform="rotate(25 790 390)"/></g>
+<g class="txt" font-size="12" text-anchor="middle">
+<g><circle cx="790" cy="172" r="31" fill="#061827" stroke="#18c2ff"/><text x="790" y="168" font-size="24">◉</text><text x="790" y="211">VOICE</text></g>
+<g><circle cx="610" cy="245" r="31" fill="#061827" stroke="#18c2ff"/><text x="610" y="251" font-size="22">⚑</text><text x="610" y="286">QUEST</text></g>
+<g><circle cx="970" cy="245" r="31" fill="#061827" stroke="#18c2ff"/><text x="970" y="251" font-size="22">⚔</text><text x="970" y="286">SKILLS</text></g>
+<g><circle cx="610" cy="535" r="31" fill="#061827" stroke="#18c2ff"/><text x="610" y="541" font-size="21">◌</text><text x="610" y="576">PEOPLE</text></g>
+<g><circle cx="970" cy="535" r="31" fill="#061827" stroke="#18c2ff"/><text x="970" y="541" font-size="21">⌖</text><text x="970" y="576">MAP</text></g>
+<g><circle cx="790" cy="607" r="31" fill="#061827" stroke="#18c2ff"/><text x="790" y="613" font-size="21">▣</text><text x="790" y="648">CODEX</text></g>
+</g>
+<rect x="1035" y="386" width="170" height="46" rx="22" fill="#06253d" stroke="#18c2ff"/><text x="1060" y="415" class="txt" font-size="16">◇ 主线任务 · 72%</text><circle cx="1180" cy="409" r="11" fill="none" stroke="#ffb43b" stroke-width="4"/>
+
+<!-- right panels -->
+<rect x="1260" y="72" width="310" height="205" rx="18" class="p"/>
+<text x="1280" y="105" class="txt" font-size="20" font-weight="700">语音交互</text><text x="1280" y="124" class="cyan" font-size="10">VOICE INTERACTION</text>
+<text x="1280" y="154" class="mut" font-size="14">当前状态：收听中 ●</text><path d="M1285 175 q10 -20 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0 t20 0" fill="none" stroke="#17c7ff" stroke-width="2"/>
+<rect x="1280" y="194" width="270" height="44" rx="8" fill="#087dc3" stroke="#21d0ff"/><text x="1390" y="222" class="txt" font-size="17" text-anchor="middle">🎙 恢复语音</text>
+<text x="1280" y="261" class="mut" font-size="12">隐私优先，本地处理音频</text>
+
+<rect x="1260" y="292" width="310" height="220" rx="18" class="p"/>
+<text x="1280" y="326" class="cyan" font-size="18" font-weight="700">条件推演 Oracle</text><text x="1280" y="345" class="mut" font-size="10">BAYESIAN FORECAST</text>
+<text x="1280" y="382" class="mut" font-size="14">基于当前信息：</text><text x="1510" y="382" class="txt" font-size="16">72%</text>
+<text x="1280" y="421" class="mut" font-size="14">若 3 日内收到回复：</text><text x="1510" y="421" class="txt" font-size="16">84%</text>
+<text x="1280" y="460" class="mut" font-size="14">若延迟 7 天：</text><text x="1510" y="460" class="txt" font-size="16">51%</text>
+<text x="1280" y="493" class="mut" font-size="12">更新于 21:59</text>
+
+<rect x="1260" y="526" width="310" height="120" rx="18" class="p"/>
+<text x="1280" y="560" class="cyan" font-size="18" font-weight="700">本地唤醒</text><text x="1280" y="580" class="mut" font-size="10">LOCAL WAKE</text><text x="1280" y="614" class="txt" font-size="14">本地语音唤醒　　开</text><rect x="1510" y="598" width="42" height="22" rx="11" fill="#1cc997"/><circle cx="1540" cy="609" r="8" fill="#fff"/>
+<rect x="1260" y="660" width="310" height="100" rx="18" class="p"/><text x="1280" y="695" class="cyan" font-size="18" font-weight="700">Cyrus 输出</text><text x="1280" y="725" class="txt" font-size="14">音量 60%</text><rect x="1385" y="717" width="145" height="8" rx="4" fill="#17384d"/><rect x="1385" y="717" width="87" height="8" rx="4" fill="#17c6ff"/>
+
+<!-- bottom dialogue -->
+<rect x="450" y="655" width="720" height="120" rx="14" fill="#03111e" fill-opacity=".92" stroke="#129ddf"/>
+<text x="475" y="688" class="cyan" font-size="16">Cyrus：</text><text x="545" y="688" class="txt" font-size="15">先生的状态资料已更新。检测到主线任务：完善 Reality RPG 展示页面。</text>
+<text x="475" y="721" class="cyan" font-size="16">Victor：</text><text x="545" y="721" class="txt" font-size="15">明白。继续推进。</text>
+<text x="475" y="754" class="cyan" font-size="16">Cyrus：</text><text x="545" y="754" class="txt" font-size="15">正在访问互联网，检索最新参考与案例……</text>
+
+<rect x="28" y="790" width="1200" height="76" rx="18" fill="#041522" fill-opacity=".92" stroke="#148ec7"/>
+<text x="55" y="824" class="cyan" font-size="13" letter-spacing="2">NOW PLAYING</text><text x="250" y="823" class="txt" font-size="14">Cyrus · 启程　 Reality RPG Ambient</text><rect x="510" y="818" width="440" height="5" rx="2" fill="#17384d"/><rect x="510" y="818" width="210" height="5" rx="2" fill="#1dcaff"/><text x="990" y="824" class="mut" font-size="13">01:28　　03:56　　◀　❚❚　▶</text>
+</g>
+</svg>
